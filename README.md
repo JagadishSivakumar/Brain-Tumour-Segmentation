@@ -20,9 +20,34 @@ FLAIR.
 ![](modalities.PNG)
 
 Check Experiments and Results in the resource pdf to know about the BRAT dataset.
-## Changes
+
+### Dataset overview
+The model takes a patch around the central pixel and labels from the five categories, as defined by the dataset -
+* Necrosis
+* Edema
+* Non-enhancing Tumor
+* Enhancing Tumour
+* Model goes over the entire image producing labels pixel by pixel
+
+### Brats Dataset
+Well synthesised images as created by SMIR with 2 subdivided folder:
+* High Grade
+* Low Grade
+
+4 Modalities (T1,T1-C,T2,FLAIR)
+![](modalities.PNG)
+
+### Dataset pre - processing
+* Slices with 4 modalities are created.
+* For 2D image modality, 2D dimension is used.
+* During testing we need to generate patches centered on pixels , for classifying.
+* The border pixel is ignored ,others are considered.
+* Dataset is generated per slice, blank slice and patches are filtered.
+* Non - Tumour pixels are ignored.
+
+## Our Idea - changes
  - The reference paper uses two-way training process but in the code 'weighted-categorical-loss' function for which weights are calculated per slice basis.
- 
+
  (Two path CNN Architecture) - It has 2 paths:
  * local path - focusing on details
  * global path - focused on context
@@ -34,3 +59,7 @@ Check Experiments and Results in the resource pdf to know about the BRAT dataset
 
  ![](batch1.png)
  ![](batch2.png)
+
+- As per the paper, the loss is defined as cumulative loss of categorization of all patches-per-pixel of the given slice. Instead, I am creating a dataset for such slice and training using mini-batch gradient descent(where it should batch gradient descent in accordance of the paper).
+
+##
