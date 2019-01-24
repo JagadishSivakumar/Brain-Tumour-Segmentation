@@ -16,6 +16,7 @@ The whole reference paper that is used in this development is https://arxiv.org/
 Segmentation slice by slice from axial view , due to loss of resolution in BRATS dataset in 3D.
 Thus, our model processes sequentially each 2D axial image (slice) where each pixel is associated with different image modalities namely; T1, T2, T1C and
 FLAIR.
+
 ![](modalities.PNG)
 
 Check Experiments and Results in the resource pdf to know about the BRAT dataset.
