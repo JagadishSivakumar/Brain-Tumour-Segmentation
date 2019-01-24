@@ -35,7 +35,6 @@ Well synthesised images as created by SMIR with 2 subdivided folder:
 * Low Grade
 
 4 Modalities (T1,T1-C,T2,FLAIR)
-![](modalities.PNG)
 
 ### Dataset pre - processing
 * Slices with 4 modalities are created.
