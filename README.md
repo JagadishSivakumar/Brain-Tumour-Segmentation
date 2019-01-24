@@ -1,6 +1,6 @@
 # Brain Tumour Segmentation
 
-I have implemented the Code using Keras
+I have implemented the Code using Keras,
 Data Set will be using the Brat Data Set - https://www.smir.ch/BRATS/Start2013
 
 ## GPU
