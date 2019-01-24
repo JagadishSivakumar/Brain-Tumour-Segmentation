@@ -22,6 +22,7 @@ FLAIR.
 Check Experiments and Results in the resource pdf to know about the BRAT dataset.
 ## Changes
  - The reference paper uses two-way training process but in the code 'weighted-categorical-loss' function for which weights are calculated per slice basis.
+ 
  (Two path CNN Architecture) - It has 2 paths:
  * local path - focusing on details
  * global path - focused on context
