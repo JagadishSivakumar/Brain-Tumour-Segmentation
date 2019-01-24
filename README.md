@@ -17,8 +17,14 @@ Segmentation slice by slice from axial view , due to loss of resolution in BRATS
 Thus, our model processes sequentially each 2D axial image (slice) where each pixel is associated with different image modalities namely; T1, T2, T1C and
 FLAIR.
 ![](modalities.PNG)
+
+Check Experiments and Results in the resource pdf to know about the BRAT dataset.
 ## Changes
  - The reference paper uses two-way training process but in the code 'weighted-categorical-loss' function for which weights are calculated per slice basis.
+ (Two path CNN Architecture) - It has 2 paths:
+ * local path - focusing on details
+ * global path - focused on context
+ (average of output from each path trained seperately)
  - Batch normalizations is used instead of dropouts, it smoothens optimization curve.
  ![](batch1.png)
  ![](batch2.png)
