@@ -50,7 +50,7 @@ Well synthesised images as created by SMIR with 2 subdivided folder:
 
  (Two path CNN Architecture) - It has 2 paths:
  * local path - focusing on details
- * global path - focused on context  (average of output from each path trained seperately)
+ * global path - focused on context <br/> (average of output from each path trained seperately)
 
 ![](twowaypath.png)
  - Batch normalizations is used instead of dropouts, it smoothens optimization curve.
