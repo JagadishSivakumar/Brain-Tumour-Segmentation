@@ -26,8 +26,10 @@ Check Experiments and Results in the resource pdf to know about the BRAT dataset
  * local path - focusing on details
  * global path - focused on context
  (average of output from each path trained seperately)
+
+![](twowaypath.png)
  - Batch normalizations is used instead of dropouts, it smoothens optimization curve.
- reference - https://gist.github.com/wassname/ce364fddfc8a025bfab4348cf5de852d
- 
+ Reference - https://gist.github.com/wassname/ce364fddfc8a025bfab4348cf5de852d
+
  ![](batch1.png)
  ![](batch2.png)
