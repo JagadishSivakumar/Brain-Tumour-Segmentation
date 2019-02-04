@@ -3,6 +3,9 @@
 I have implemented the Code using Keras,
 Data Set will be using the Brat Data Set - https://www.smir.ch/BRATS/Start2013
 
+## Dataset 
+https://figshare.com/articles/BRATS_2013_Leaderboard_and_Test_Datasets/1348692 
+
 ## GPU
 Will be using the Google Colabs for accessing powerfull GPUs
 https://colab.research.google.com
